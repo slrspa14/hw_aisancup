@@ -1,6 +1,5 @@
-#include "display.h"
-
-void display::start_asciiart()
+#include "header_sub.h"
+void asian_cup::start_asciiart()
 {
     std::string line;
     std::ifstream file("asiancup_ASCIIART.txt");

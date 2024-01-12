@@ -1,9 +1,8 @@
-#include "display.h"
-
+#include "header_sub.h"
 void display::korea_asciiart()
 {
     std::string line;
-    std::ifstream file("/home/aiot11/cfold/c++/asian/KFA_ASCIIART.txt");
+    std::ifstream file("KFA_ASCIIART.txt");
     if(file.is_open())
     {
         while(getline(file,line))

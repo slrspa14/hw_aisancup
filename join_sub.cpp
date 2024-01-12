@@ -1,4 +1,4 @@
-#include "header.h"
+#include "header_sub.h"
 
 void asian_cup::join()
 {

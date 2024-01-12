@@ -1,4 +1,4 @@
-#include "display.h"
+#include "header_sub.h"
 void display::information()
 {
     int choice = 0;

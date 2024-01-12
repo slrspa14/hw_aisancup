@@ -1,6 +1,6 @@
-#include "display.h"
+#include "header_sub.h"
 
-void display::menu_display()
+void asian_cup::menu_display()
 {
     std::cout << "1. 로그인" << std::endl;
     std::cout << "2. 회원가입" << std::endl;

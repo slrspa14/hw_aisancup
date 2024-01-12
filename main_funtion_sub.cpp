@@ -1,7 +1,9 @@
-#include "display.h"
-
+#include "header_sub.h"
 int choice = 0;
-void display::dis()
+int id_count = 0;
+int pw_count = 0;
+
+void asian_cup::dis()
 {
     while (choice < 6)
     {
@@ -13,7 +15,7 @@ void display::dis()
         {
             case 1:
             {
-                if (login_count > 0)
+                if (id_count > 0 && pw_count > 0)
                 {
                     system("clear");
                     std::cout << "로그인상태입니다." << std::endl;

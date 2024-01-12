@@ -1,5 +1,5 @@
-#include "display.h"
-void display::find_logindata()
+#include "header_sub.h"
+void asian_cup::find_logindata()
 {
     system("clear");
     std::cout << "ID/PW 찾기" << std::endl;
