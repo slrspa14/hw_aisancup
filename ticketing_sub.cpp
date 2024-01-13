@@ -122,6 +122,7 @@ void asian_cup::day_choice()
             std::cin >> pay_choice;
             if(pay_choice == 1)
             {
+                ofile << "아이디:" << log_id << ",";
                 ofile << "1.15 20:30 한국:바레인, "; //파일에 경기일정 저장
                 ofile << bucket*headcount << "원, "; // 파일에 가격저장
                 ofile << seat_choice1 << "행, "; // 행저장
@@ -221,6 +222,7 @@ void asian_cup::day_choice()
             std::cin >> pay_choice;
             if(pay_choice == 1)
             {
+                ofile << "아이디:" << log_id << ",";
                 ofile << "1.20 20:30 한국:요르단"; //파일에 경기일정 저장
                 ofile << bucket*headcount << "원, "; // 파일에 가격저장
                 ofile << seat_choice1 << "행, "; // 행저장
@@ -313,6 +315,7 @@ void asian_cup::day_choice()
             std::cin >> pay_choice;
             if(pay_choice == 1)
             {
+                ofile << "아이디:" << log_id << ",";
                 ofile << "1.25 20:30 한국:말레이시아"; //파일에 경기일정 저장
                 ofile << bucket*headcount << "원, "; // 파일에 가격저장
                 ofile << seat_choice1 << "행, "; // 행저장

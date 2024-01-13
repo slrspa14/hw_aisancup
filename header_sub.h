@@ -18,6 +18,7 @@ class asian_cup
     std::string user_id;
     std::string user_pw;
     std::string user_pnum;
+    std::string log_id;
     int ticket_count = 0;
     public:
     void start_asciiart();
