@@ -127,6 +127,7 @@ void asian_cup::day_choice()
                 ofile << seat_choice1 << "행, "; // 행저장
                 ofile << seat_choice2 << "열, "; // 열저장
                 ofile << "인원:" << headcount << " " << std::endl; // 인원수 저장
+                ticket_count++;
                 std::cout << "결제금액:" << bucket*headcount <<"원 결제되었습니다." << std::endl;
                 sleep(1);
                 system("clear");
@@ -225,6 +226,7 @@ void asian_cup::day_choice()
                 ofile << seat_choice1 << "행, "; // 행저장
                 ofile << seat_choice2 << "열, "; // 열저장
                 ofile << "인원:" << headcount << " " << std::endl; // 인원수 저장
+                ticket_count++;
                 std::cout << "결제금액:" << bucket*headcount <<"원 결제되었습니다." << std::endl;
                 sleep(1);
                 system("clear");
@@ -316,6 +318,7 @@ void asian_cup::day_choice()
                 ofile << seat_choice1 << "행, "; // 행저장
                 ofile << seat_choice2 << "열, "; // 열저장
                 ofile << "인원:" << headcount << " " << std::endl; // 인원수 저장
+                ticket_count++;
                 std::cout << "결제금액:" << bucket*headcount <<"원 결제되었습니다." << std::endl;
                 sleep(1);
                 system("clear");

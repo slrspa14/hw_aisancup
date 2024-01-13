@@ -33,11 +33,11 @@ void asian_cup::log_in()
                     std::cout << "로그인되었습니다." << std::endl;
                     log_count++;
                     login_count++;
-                    // std::ofstream ticket("ticket_sub.csv",std::ios::app);
-                    // if(!ticket.is_open())
-                    //     std::cout << "file open error" << std::endl;
-                    // else
-                    //     ticket << log_id << ",";
+                    std::ofstream ticket("ticket_sub.csv",std::ios::app);
+                    if(!ticket.is_open())
+                        std::cout << "file open error" << std::endl;
+                    else
+                        ticket << log_id << ",";
                     sleep(1);
                     system("clear");
                     file.close();
