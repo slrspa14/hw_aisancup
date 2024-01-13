@@ -1,8 +1,9 @@
-#include "display.h"
+// #include "display.h"
+#include "header_sub.h"
 
 void asian_cup::day_choice()
 {
-    std::ofstream ofile("ticket.csv",std::ios::app);
+    std::ofstream ofile("ticket_sub.csv",std::ios::app);
     if(!ofile.is_open())
         std::cout << "file open error" << std::endl;
     else // 파일열고
@@ -122,10 +123,10 @@ void asian_cup::day_choice()
             if(pay_choice == 1)
             {
                 ofile << "1.15 20:30 한국:바레인, "; //파일에 경기일정 저장
-                ofile << bucket*headcount; // 파일에 가격저장
-                ofile << seat_choice1 << " 행, "; // 행저장
-                ofile << seat_choice2 << " 열, "; // 열저장
-                ofile << "인원" << headcount << " " << std::endl; // 인원수 저장
+                ofile << bucket*headcount << "원, "; // 파일에 가격저장
+                ofile << seat_choice1 << "행, "; // 행저장
+                ofile << seat_choice2 << "열, "; // 열저장
+                ofile << "인원:" << headcount << " " << std::endl; // 인원수 저장
                 std::cout << "결제금액:" << bucket*headcount <<"원 결제되었습니다." << std::endl;
                 sleep(1);
                 system("clear");
@@ -219,6 +220,11 @@ void asian_cup::day_choice()
             std::cin >> pay_choice;
             if(pay_choice == 1)
             {
+                ofile << "1.20 20:30 한국:요르단"; //파일에 경기일정 저장
+                ofile << bucket*headcount << "원, "; // 파일에 가격저장
+                ofile << seat_choice1 << "행, "; // 행저장
+                ofile << seat_choice2 << "열, "; // 열저장
+                ofile << "인원:" << headcount << " " << std::endl; // 인원수 저장
                 std::cout << "결제금액:" << bucket*headcount <<"원 결제되었습니다." << std::endl;
                 sleep(1);
                 system("clear");
@@ -305,6 +311,11 @@ void asian_cup::day_choice()
             std::cin >> pay_choice;
             if(pay_choice == 1)
             {
+                ofile << "1.25 20:30 한국:말레이시아"; //파일에 경기일정 저장
+                ofile << bucket*headcount << "원, "; // 파일에 가격저장
+                ofile << seat_choice1 << "행, "; // 행저장
+                ofile << seat_choice2 << "열, "; // 열저장
+                ofile << "인원:" << headcount << " " << std::endl; // 인원수 저장
                 std::cout << "결제금액:" << bucket*headcount <<"원 결제되었습니다." << std::endl;
                 sleep(1);
                 system("clear");

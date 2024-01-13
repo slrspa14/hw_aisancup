@@ -15,7 +15,7 @@ void asian_cup::dis()
         {
             case 1:
             {
-                if (id_count > 0 && pw_count > 0)
+                if (login_count > 0)
                 {
                     system("clear");
                     std::cout << "로그인상태입니다." << std::endl;
@@ -28,7 +28,7 @@ void asian_cup::dis()
             }
 
             case 2:
-                file_save();
+                join();
                 break;
 
             case 3:
@@ -38,7 +38,7 @@ void asian_cup::dis()
             case 4:
             {
                 system("clear");
-                if (id_v.size() == 0)
+                if (login_count == 0)
                 {
                     std::cout << "로그인 후 이용 가능합니다." << std::endl;
                     sleep(1);

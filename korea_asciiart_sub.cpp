@@ -1,5 +1,5 @@
 #include "header_sub.h"
-void display::korea_asciiart()
+void asian_cup::korea_asciiart()
 {
     std::string line;
     std::ifstream file("KFA_ASCIIART.txt");
